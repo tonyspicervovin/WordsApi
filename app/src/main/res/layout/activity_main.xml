@@ -33,23 +33,52 @@
 
     <TextView
         android:id="@+id/word_definition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginLeft="132dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="156dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="52dp"
         android:text="Definition Shown Here"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_button" />
 
     <ImageView
         android:id="@+id/word_image"
-        android:layout_width="247dp"
-        android:layout_height="283dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="108dp"
+        android:layout_width="181dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+    <TextView
+        android:id="@+id/text_pronunciation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginBottom="125dp"
+        android:text="Pronunciation"
+        app:layout_constraintBottom_toTopOf="@+id/word_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_pronunciation"
+        app:layout_constraintEnd_toEndOf="@+id/text_pronunciation"
+        app:layout_constraintEnd_toStartOf="@+id/word_definition"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/word_definition"
+        app:layout_constraintTop_toBottomOf="@+id/word_definition" />
 </androidx.constraintlayout.widget.ConstraintLayout>
